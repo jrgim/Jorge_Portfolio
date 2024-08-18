@@ -8,4 +8,7 @@ class State(rx.State):
 
 
 # Create the app.
-app = rx.App()
+app = rx.App(
+    description="Soy Jorge, tengo 20 años, estoy estudiando ingenieria informatica. Este es mi portfolio.",
+    
+)

@@ -52,6 +52,7 @@ def menu_button() -> rx.Component:
                 *[
                     menu_item_link(page["title"], page["route"])
                     for page in get_decorated_pages()
+                    if page["title"].lower() != "contacto"
                 ],
                 rx.menu.separator(),
                 menu_item_link("Contacto", "/contact"),
@@ -129,7 +130,7 @@ def template(
                 templated_page(),
                 has_background=True,
                 accent_color="mint",
-                #accent_color="indigo",
+                # accent_color="indigo",
                 gray_color="sage",
             )
 
