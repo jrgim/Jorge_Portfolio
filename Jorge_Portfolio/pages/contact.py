@@ -13,4 +13,5 @@ def contact() -> rx.Component:
         lb.link_button("Github", "github", "https://github.com/jrgim"),
         # lb.link_button("Email", "mail", "mailto:jorge.gimenezlopez@gmail.com"),
         lb.link_button("Email", "mail", "mailto:alu.139992@usj.es"),
+        #lb.link_button("Descargar CV", "file-text" , "/Curriculum.pdf"),
     )

@@ -1,7 +1,7 @@
 """Sidebar component for the app."""
 
 from Jorge_Portfolio import styles
-
+import Jorge_Portfolio.components.link_button as lb
 import reflex as rx
 
 
@@ -14,15 +14,11 @@ def sidebar_header() -> rx.Component:
     return rx.hstack(
         # The logo.
         rx.color_mode_cond(
-            rx.image(src="/reflex_black.svg", height="2em"),
-            rx.image(src="/reflex_white.svg", height="2em"),
+            rx.avatar(fallback="JG", size="4", variant="solid"),
+            rx.avatar(fallback="JG", size="4", variant="soft"),
         ),
         rx.spacer(),
-        rx.color_mode.button(
-            # rx.icon("github"),
-            color_scheme="gray",
-            variant="soft",
-        ),
+        rx.color_mode.button(),
         align="center",
         width="100%",
         border_bottom=styles.border,
@@ -38,15 +34,21 @@ def sidebar_footer() -> rx.Component:
         The sidebar footer component.
     """
     return rx.hstack(
+        lb.link_button(
+            "", "linkedin", "https://www.linkedin.com/in/jorge-gimenez-lopez"
+        ),
+        lb.link_button("", "github", "https://github.com/jrgim"),
+        lb.link_button("", "mail", "mailto:alu.139992@usj.es"),
         rx.spacer(),
         rx.link(
-            rx.text("Docs"),
-            href="https://reflex.dev/docs/getting-started/introduction/",
+            rx.text("ES"),
+            href="https://jorgegimenez.reflex.run",
             color_scheme="lime",
         ),
+        rx.text(" | "),
         rx.link(
-            rx.text("Blog"),
-            href="https://reflex.dev/blog/",
+            rx.text("EN"),
+            href="https://jorgegimenez.reflex.run",
             color_scheme="lime",
         ),
         width="100%",
