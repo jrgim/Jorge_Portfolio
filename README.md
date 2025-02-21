@@ -1,6 +1,6 @@
 # Portfolio
 
-Este es un ejemplo de mi portfolio que desarrollé en mi tiempo libre para aprender a utilizar un framework de creación de sitios web con Python. Aqui hay algunas imagenes de como se ve el sitio web:
+Este es un ejemplo de mi portafolio personal, desarrollado en mi tiempo libre para aprender y experimentar con un framework de creación de sitios web en Python. A continuación, se presentan algunas imágenes que muestran cómo se ve el sitio web:
 ![Ejemplo Web principal](assets/Principal.png)
 ![Ejemplo Web principal_2](assets/Principal_2.png)
 ![Ejemplo Educación](assets/Ejemplo3.png)
